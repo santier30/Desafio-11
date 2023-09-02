@@ -29,7 +29,8 @@ function equalHandler (){
       let result = eval(expression);
       
       if (!isNaN(result)) {
-        display.textContent = result;
+        
+        display.textContent =result.toString().length>13? result.toFixed(3):result
         lengthHandler()
         ans = true
       } 
